@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cart"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Потеряшки" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Категории" />
+        <item
+            android:id="@+id/nav_add_advert"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Добавить объявление" />
+        <item
+            android:id="@+id/nav_messenger"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Мессенджер" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Настройки" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Выход" />
+
+    </group>
+</menu>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_menu_of_users">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Recycler_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editTextTextMultiLine2"
+        android:layout_marginTop="20dp"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="1dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="125dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/Recycler_menu"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toEndOf="@+id/editTextTextMultiLine2"
+        android:text="Поиск" />
+</RelativeLayout>

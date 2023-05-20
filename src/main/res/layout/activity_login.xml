@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/applogo"
+        android:layout_width="226dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/login_phone_input"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applogo"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Номер телефона"
+        android:inputType="textNoSuggestions"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_phone_input"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="35dp"
+        android:background="@android:drawable/editbox_background"
+        android:hint="Пароль"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/login_checkbox"
+            style="@style/Material.Drawable.CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:gravity="center_vertical"
+            android:text="Запомнить меня"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="TouchTargetSizeCheck" />
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Забыли пароль"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="313dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/linear_check"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="50dp"
+        android:text="Войти"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="313dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/linear_check"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginRight="50dp"
+        android:text="Регистрация"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.935" />
+    <TextView
+        android:id="@+id/not_admin_panel_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_button"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="-578dp"
+        android:text="Для клиентов"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>
